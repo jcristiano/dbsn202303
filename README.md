@@ -13,3 +13,8 @@ CREATE DATABASE lojasndm
 source <path>\001-script_criacao_estrutura.sql
 source <path>\002-script_insert_dados.sql
 ```
+
+
+## _Diagrama Entidade Relacionamento_
+![Diagrama Entidade Relacionamento](diagramas/DER.png)
+
