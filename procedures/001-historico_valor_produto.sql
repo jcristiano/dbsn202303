@@ -28,7 +28,7 @@ CREATE TRIGGER AtualizarHistoricoProduto
 AFTER UPDATE ON produto FOR EACH ROW
 BEGIN
     IF NEW.preco != OLD.preco THEN
-        CALL RegistrarHistoricoProduto(NEW.produto_id, NEW.preco, OLD.preco);
+        CALL RegistrarHistoricoProduto(NEW.id, NEW.preco, OLD.preco);
     END IF;
 END;
 $$
